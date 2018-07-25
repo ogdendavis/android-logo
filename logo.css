@@ -89,3 +89,35 @@ div div {
 .r-leg {
   right: 45px;
 }
+
+/*Animation time!*/
+.head:hover {
+  transform: rotate(-5deg);
+  transform-origin: bottom left;
+  -webkit-transform: rotate(-5deg);
+  -webkit-transform-origin: bottom left;
+  -moz-transform: rotate(-5deg);
+  -moz-transform-origin: bottom left;
+}
+
+.l-arm:hover {
+  transform: rotate(15deg);
+  transform-origin: 50% 25px;
+  -webkit-transform: rotate(15deg);
+  -webkit-transform-origin: 50% 25px;
+  -moz-transform: rotate(15deg);
+  -moz-transform-origin: 50% 25px;
+}
+
+.r-arm:hover {
+  transform: rotate(-15deg);
+  transform-origin: 50% 25px;
+  -webkit-transform: rotate(-15deg);
+  -webkit-transform-origin: 50% 25px;
+  -moz-transform: rotate(-15deg);
+  -moz-transform-origin: 50% 25px;
+}
+
+.l-leg:hover, .r-leg:hover {
+  transform: translate(0, -25%);
+}
