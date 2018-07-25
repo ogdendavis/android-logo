@@ -12,7 +12,6 @@ div div {
   height: 404px;
   width: 334px;
   margin: 100px auto;
-  background: lightblue;
 }
 
 .head {
@@ -80,7 +79,7 @@ div div {
 
 .l-leg, .r-leg {
   height: 80px;
-  top: 182px;
+  top: 184px;
   border-radius: 0 0 25px 25px;
 }
 .l-leg {
@@ -120,4 +119,18 @@ div div {
 
 .l-leg:hover, .r-leg:hover {
   transform: translate(0, -25%);
+}
+
+.body:active {
+  background: url(spongebob.jpg);
+}
+
+.body:active .l-leg, .body:active .r-leg, .body:active .l-arm, .body:active .r-arm {
+  background: #E9F900;
+}
+
+.l-eye:active, .r-eye:active {
+  height: 5px;
+  border-radius: 0;
+  top: 52px;
 }
