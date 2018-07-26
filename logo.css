@@ -1,3 +1,7 @@
+body {
+  background: #cde;
+}
+
 div {
   margin: 0;
   padding: 0;
@@ -89,7 +93,8 @@ div div {
   right: 45px;
 }
 
-/*Animation time!*/
+/* Hover animations */
+
 .head:hover {
   transform: rotate(-5deg);
   transform-origin: bottom left;
@@ -121,6 +126,8 @@ div div {
   transform: translate(0, -25%);
 }
 
+/* Body click */
+
 .body:active {
   background: url(spongebob.jpg);
 }
@@ -129,8 +136,57 @@ div div {
   background: #E9F900;
 }
 
+/* Eye click */
+/*FIX to not trigger head click animation? */
+
 .l-eye:active, .r-eye:active {
   height: 5px;
   border-radius: 0;
   top: 52px;
 }
+
+/* Head click */
+/* FIX to not also trigger on eye-wink? */
+
+.head:active .r-ant {
+  width: 80px;
+  height: 80px;
+
+  right: 70px;
+  top: -90px;
+  transform: none;
+
+  background: black;
+  border-radius: 15% 15% 0 0;
+  border-bottom: 10px solid white;
+}
+
+.head:active .l-ant {
+  width: 160px;
+  height: 10px;
+
+  left: 30px;
+  top: 0;
+  transform: none;
+
+  background: black;
+  border-radius: 40%;
+}
+
+/*
+.l-ant, .r-ant {
+  width: 6px;
+  height: 50px;
+  position: absolute;
+  top: -34px;
+  border-radius: 3px;
+}
+.l-ant {
+  left: 50px;
+  transform: rotate(-30deg);
+}
+.r-ant {
+  right: 50px;
+  transform: rotate(30deg);
+}
+*/
