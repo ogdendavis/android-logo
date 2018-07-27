@@ -4,4 +4,4 @@ In addition to following the tutorial, I've made the following additions/customi
 
  - Use transform-origin instead of translate for maintaining element placement in animations
  - Create new :hover events for legs
- - Create new on-click (:active) events for body and eyes
+ - Create new on-click (:active) events for body, head, and eyes
