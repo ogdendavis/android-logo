@@ -18,7 +18,7 @@ div div {
   margin: 100px auto;
 }
 
-.head {
+.head, .head-click {
   width: 220px;
   height: 100px;
   top: 32px;
@@ -57,7 +57,7 @@ div div {
   transform: rotate(30deg);
 }
 
-.body {
+.body, .body-click {
   width: 220px;
   height: 184px;
   top: 40px;
@@ -128,13 +128,21 @@ div div {
 
 /* Body click */
 
-.body:active {
+.body-click {
+  top: 0;
+  left: 0;
+  background: transparent;
+}
+
+.body-click:active {
   background: url(spongebob.jpg);
 }
 
+/*
 .body:active .l-leg, .body:active .r-leg, .body:active .l-arm, .body:active .r-arm {
   background: #E9F900;
 }
+*/
 
 /* Eye click */
 /*FIX to not trigger head click animation? */
@@ -148,7 +156,13 @@ div div {
 /* Head click */
 /* FIX to not also trigger on eye-wink? */
 
-.head:active .r-ant {
+.head-click {
+  top: 0;
+  left: 0;
+  background: transparent;
+}
+
+.head-click:active .r-ant {
   width: 80px;
   height: 80px;
 
@@ -161,7 +175,7 @@ div div {
   border-bottom: 10px solid white;
 }
 
-.head:active .l-ant {
+.head-click:active .l-ant {
   width: 160px;
   height: 10px;
 
