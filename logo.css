@@ -33,6 +33,7 @@ div div {
   position: absolute;
   top: 42px;
   border-radius: 10px;
+  z-index: 2;
 }
 .l-eye {
   left: 50px;
@@ -138,14 +139,7 @@ div div {
   background: url(spongebob.jpg);
 }
 
-/*
-.body:active .l-leg, .body:active .r-leg, .body:active .l-arm, .body:active .r-arm {
-  background: #E9F900;
-}
-*/
-
 /* Eye click */
-/*FIX to not trigger head click animation? */
 
 .l-eye:active, .r-eye:active {
   height: 5px;
@@ -154,53 +148,33 @@ div div {
 }
 
 /* Head click */
-/* FIX to not also trigger on eye-wink? */
 
 .head-click {
   top: 0;
   left: 0;
-  background: transparent;
+  background: transparent
+  z-index: 1;
 }
 
-.head-click:active .r-ant {
+.head-click:active .hat-top {
   width: 80px;
   height: 80px;
 
-  right: 70px;
+  left: 70px;
   top: -90px;
-  transform: none;
 
   background: black;
   border-radius: 15% 15% 0 0;
   border-bottom: 10px solid white;
 }
 
-.head-click:active .l-ant {
+.head-click:active .hat-brim {
   width: 160px;
   height: 10px;
 
   left: 30px;
-  top: 0;
-  transform: none;
+  top: -90px;
 
   background: black;
   border-radius: 40%;
 }
-
-/*
-.l-ant, .r-ant {
-  width: 6px;
-  height: 50px;
-  position: absolute;
-  top: -34px;
-  border-radius: 3px;
-}
-.l-ant {
-  left: 50px;
-  transform: rotate(-30deg);
-}
-.r-ant {
-  right: 50px;
-  transform: rotate(30deg);
-}
-*/
