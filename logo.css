@@ -7,6 +7,7 @@ div {
   padding: 0;
 }
 
+/* Set child containers to Android color */
 div div {
   background: #A4CA39;
   position: relative;
@@ -96,6 +97,7 @@ div div {
 
 /* Hover animations */
 
+/* Head tilt, anchored at bottom left corner */
 .head:hover {
   transform: rotate(-5deg);
   transform-origin: bottom left;
@@ -105,6 +107,7 @@ div div {
   -moz-transform-origin: bottom left;
 }
 
+/* Arm goes out to left, anchored at top */
 .l-arm:hover {
   transform: rotate(15deg);
   transform-origin: 50% 25px;
@@ -114,6 +117,7 @@ div div {
   -moz-transform-origin: 50% 25px;
 }
 
+/* Arm goes out to right, anchored at top */
 .r-arm:hover {
   transform: rotate(-15deg);
   transform-origin: 50% 25px;
@@ -123,24 +127,25 @@ div div {
   -moz-transform-origin: 50% 25px;
 }
 
+/* Both legs slide up when moused over, appearing like steps */
 .l-leg:hover, .r-leg:hover {
   transform: translate(0, -25%);
 }
 
 /* Body click */
-
 .body-click {
   top: 0;
   left: 0;
   background: transparent;
 }
 
+/* Becomes active when clicked, making picture appear above torso */
 .body-click:active {
   background: url(spongebob.jpg);
 }
 
 /* Eye click */
-
+/* Becomes active when clicked, changing shape to winking eye */
 .l-eye:active, .r-eye:active {
   height: 5px;
   border-radius: 0;
@@ -148,14 +153,15 @@ div div {
 }
 
 /* Head click */
-
+/* Parent container for hat -- is just for organization, no display */
 .head-click {
   top: 0;
   left: 0;
-  background: transparent
+  background: transparent;
   z-index: 1;
 }
 
+/* Draw top of hat, with border bottom as hat strap */
 .head-click:active .hat-top {
   width: 80px;
   height: 80px;
@@ -168,6 +174,7 @@ div div {
   border-bottom: 10px solid white;
 }
 
+/* Draw hat brim -- it's an ellipse! */
 .head-click:active .hat-brim {
   width: 160px;
   height: 10px;
