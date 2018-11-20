@@ -132,6 +132,8 @@ div div {
   transform: translate(0, -25%);
 }
 
+/* Click animations */
+
 /* Body click */
 .body-click {
   top: 0;
@@ -184,4 +186,18 @@ div div {
 
   background: black;
   border-radius: 40%;
+}
+
+/* Right arm click displays phone in "hand" */
+.r-arm:active .r-click {
+  width: 100px;
+  height: 100px;
+  
+  position: fixed;
+  bottom: 0;
+
+  background-color: transparent;
+  background-image: url(transparent-phone.png);
+  background-size: contain;
+  transform: rotate(30deg);
 }
